@@ -1,5 +1,5 @@
 import "./App.css";
-
+import {Tags} from "./Tags.js"
 function App() {
   return (
     <div className="App">
@@ -10,12 +10,14 @@ function App() {
         </div>
       </section>
       <div class="container is-fullhd">
-        <div class="notification">
-          Edit the <code>./src</code> folder to add components.
+        <div class="tags">
+          <Tags class="tags" tags={["boomdotdev","task","tags","react"]} />
         </div>
       </div>
     </div>
   );
 }
+
+
 
 export default App;
